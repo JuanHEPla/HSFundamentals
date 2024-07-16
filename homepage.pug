@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Homepage
+  body
+    h1 Custom Objects List
+    table
+      thead
+        tr
+          th Name
+          // Añadir otras columnas según sea necesario
+      tbody
+        each item in data
+          tr
+            td= item.name
+            // Añadir otras propiedades según sea necesario
+    a(href="/update-cobj") Add to this table
