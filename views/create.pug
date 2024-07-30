@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title Create/Update Video Games
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-container
+            h1 Create/Update Video Games
+            a(href="/") Back to list video games
+            br
+            p If not found by name, it's created!
+            br
+            form(action="/create" method="post")
+                div.form-group
+                    label(for="name") Name
+                    input(type="text" id="name" name="name")
+                div.form-group
+                    label(for="game_genre") Game Genre
+                    input(type="text" id="game_genre" name="game_genre")
+                div.form-group
+                    label(for="developer") Developer
+                    input(type="text" id="developer" name="developer")
+                button(type="submit") Submit

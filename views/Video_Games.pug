@@ -1,0 +1,16 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .content
+            h1.index Video Games
+            a(href="/create") Create/Update 
+            .cards 
+                each videoGame in data
+                    .card 
+                        h2.card__name #{videoGame.properties.name}
+                        p.card__genre Genre: #{videoGame.properties.game_genre}
+                        p.card__developer Developer: #{videoGame.properties.developer}
